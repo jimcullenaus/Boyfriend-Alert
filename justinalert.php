@@ -11,14 +11,14 @@
 	var speed = 100; /* The speed/duration of the effect in milliseconds */
 
 	function typeWriter() {
-		  if (i < txt.length) {
-			      document.getElementById("here").innerHTML += txt.charAt(i);
-			          i++;
-			          setTimeout(typeWriter, speed);
-		  }
-		  else{
+		if (i < txt.length) {
+			document.getElementById("here").innerHTML += txt.charAt(i);
+			i++;
+			setTimeout(typeWriter, speed);
+		}
+		else {
 			window.location = "http://google.com";
-		  }
+		}
 	}
 
 	typeWriter();
