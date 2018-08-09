@@ -1,7 +1,8 @@
 <link rel="apple-touch-icon" sizes="any" href="batsig.png">
 <?php
+	require_once("configsecrets.php");
 	$key = $_GET['key'];
-	$res = file_get_contents("http://REDACTED/beep.php?key=$key");	
+	$res = file_get_contents("http://{$domain}/beep.php?key=$key");	
 ?>
 	<div id="here"></div>
 	<script>
